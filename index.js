@@ -165,7 +165,7 @@ const questions = [
             { Text: "Euclides da Cunha", correct: false },
             { Text: "Machado de Assis", correct: false },
         ],
-        image: "/ImagensPerguntas/img.JPG"
+        image: "ImagensPerguntas/img1.jpg"
 
     },
     {
@@ -176,7 +176,7 @@ const questions = [
             { Text: "Iracema", correct: false },
             { Text: "Memórias Póstumas de Brás Cubas", correct: false },
         ],
-        image: "/ImagensPerguntas/img2.JPG" 
+        image: "ImagensPerguntas/img2.jpg" 
 
     },
     {
@@ -187,7 +187,7 @@ const questions = [
             { Text: "Buriti", correct: false },
             { Text: "Araticum", correct: false },
         ],
-        image: "/ImagensPerguntas/img3.JPG" 
+        image: "ImagensPerguntas/img3.jpg" 
 
 
     },
@@ -199,7 +199,7 @@ const questions = [
             { Text: "Arara-azul", correct: true },
             { Text: "Tatu-canastra", correct: false },
         ],
-        image: "/ImagensPerguntas/imagem4.JPG" 
+        image: "ImagensPerguntas/img4.jpg" 
 
     },
     {
@@ -210,7 +210,7 @@ const questions = [
             { Text: "Pesca artesanal", correct: false },
             { Text: "Ecoturismo", correct: false },
         ],
-        image: "/ImagensPerguntas/img5.JPG" 
+        image: "ImagensPerguntas/img5.jpg" 
 
     },
     {
@@ -221,7 +221,7 @@ const questions = [
             { Text: "Festa Junina", correct: false },
             { Text: "Oktoberfest", correct: false },
         ],
-        image: "/ImagensPerguntas/img6.JPG" 
+        image: "ImagensPerguntas/img6.jpg" 
 
     },
     {
@@ -232,7 +232,7 @@ const questions = [
             { Text: "Onça-pintada", correct: false },
             { Text: "Capivara", correct: false },
         ],
-        image: "/ImagensPerguntas/img7.JPG" 
+        image: "ImagensPerguntas/img7.jpg" 
 
     },
     {
@@ -243,7 +243,7 @@ const questions = [
             { Text: "Mangueira", correct: false },
             { Text: "Jacarandá", correct: false },
         ],
-        image: "ImagensPerguntas/img8.JPG"
+        image: "ImagensPerguntas/img8.jpg"
 
     },
     {
@@ -254,7 +254,7 @@ const questions = [
             { Text: "Buriti", correct: false },
             { Text: "Araticum", correct: false },
         ],
-        image: "/ImagensPerguntas/img9.JPG" 
+        image: "ImagensPerguntas/img9.jpg" 
 
     },
     {
@@ -265,7 +265,7 @@ const questions = [
             { Text: "É totalmente protegido", correct: false },
             { Text: "Tem apenas árvores e arbustos", correct: false },
         ],
-        image: "/ImagensPerguntas/img10.JPG"
+        image: "ImagensPerguntas/img10.jpg"
 
     },
     {
@@ -276,7 +276,7 @@ const questions = [
             { Text: "Cutia", correct: false },
             { Text: "Mocó", correct: false },
         ],
-        image: "/ImagensPerguntas/img11.JPG" 
+        image: "ImagensPerguntas/img11.jpg" 
 
     },
     {
@@ -287,7 +287,7 @@ const questions = [
             { Text: "Baru", correct: false },
             { Text: "Bacaba", correct: false },
         ],
-        image: "/ImagensPerguntas/img12.JPG"
+        image: "ImagensPerguntas/img12.jpg"
 
     },
     {
@@ -298,7 +298,7 @@ const questions = [
             { Text: "Aumentar a poluição", correct: false },
             { Text: "Não existe efeito", correct: false },
         ],
-        image: "/ImagensPerguntas/img13.JPG"
+        image: "ImagensPerguntas/img13.jpg"
 
     },
     {
@@ -309,7 +309,7 @@ const questions = [
             { Text: "Piano", correct: false },
             { Text: "Flauta transversal", correct: false },
         ],
-        image: "/ImagensPerguntas/img 14.JPG"
+        image: "ImagensPerguntas/img14.jpg"
 
     },
     {
@@ -320,8 +320,9 @@ const questions = [
             { Text: "Urbanização de áreas protegidas", correct: false },
             { Text: "Mineração intensiva", correct: false },
         ],
-        image: "/ImagensPerguntas/img15.JPG"
+        image: "ImagensPerguntas/img15.jpg"
 
     }
 ];
+
 
