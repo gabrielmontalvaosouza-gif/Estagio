@@ -24,6 +24,29 @@ body.start {
     background-repeat: no-repeat;
 }
 
+body.finish {
+    background-image: url("Imagens Capas/ImagemFinal3.png");
+    background-size: cover; /* cobre toda a tela */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===================== MODIFICAÇÕES PARA MOBILE ===================== */
+@media (max-width: 768px) {
+    body.start,
+    body.finish {
+        background-size: contain;        /* MODIFICADO */
+        background-position: top center; /* MODIFICADO */
+        background-repeat: no-repeat;    /* MODIFICADO */
+        background-attachment: scroll;   /* MODIFICADO */
+    }
+}
+
+/* ===================== ELEMENTOS ===================== */
 
 #logo-small {
     position: fixed;
@@ -36,7 +59,6 @@ body.start {
 
 .hide {
     display: none !important;
-    /* garante que nada sobrescreva o hide */
 }
 
 .container {
@@ -52,7 +74,6 @@ body.start {
     justify-content: center;
     align-items: center;
 }
-
 
 .question-container {
     width: 100%;
@@ -114,20 +135,9 @@ body.start {
     margin-top: 8px;
     color: #e1e1e6;
 }
-body.finish {
-    background-image: url("Imagens Capas/ImagemFinal3.png");
-    background-size: cover; /* cobre toda a tela */
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .final-container {
-    background-color: rgba(18, 18, 20, 0.6); 
+    background-color: rgba(18, 18, 20, 0.6);
     padding: 20px;
     border: 2px solid #e1e1e6;
     border-radius: 6px;
@@ -136,10 +146,6 @@ body.finish {
     margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
-
-
-
-
 
 /* ===================== ANIMAÇÕES ===================== */
 .correct {
@@ -152,33 +158,16 @@ body.finish {
     animation: incorrectAnimation 0.5s ease forwards;
 }
 
-
 @keyframes correctAnimation {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 @keyframes incorrectAnimation {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.95);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
 }
 
 .feedback-image {
@@ -192,8 +181,7 @@ body.finish {
     border-radius: 8px;
 }
 
-
-/* ===================== RESPONSIVIDADE ===================== */
+/* ===================== RESPONSIVIDADE EXISTENTE ===================== */
 @media (max-width: 768px) {
     .question {
         font-size: 20px;
@@ -201,7 +189,6 @@ body.finish {
 
     .answers-container {
         grid-template-columns: 1fr;
-        /* Respostas em 1 coluna */
         gap: 12px;
     }
 
@@ -224,7 +211,6 @@ body.finish {
     @media (max-width: 360px) {
         #logo-small {
             width: 50px;
-            /* diminui proporcionalmente */
         }
     }
 
@@ -283,37 +269,16 @@ body.finish {
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 @keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-5px);
-    }
-
-    50% {
-        transform: translateX(5px);
-    }
-
-    75% {
-        transform: translateX(-5px);
-    }
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
 }
 
 .answer {
