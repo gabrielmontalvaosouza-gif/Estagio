@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz Cerrado</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Cerrado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
-<body class="start"> 
 
-  <img src="Imagens Capas/ImagemInicial2.png" alt="Tela Inicial" class="bg-img start-bg" />
+<body class="start">
+    <img src="logo-ifg-vertical-inhumas-branco.png" id="logo-small">
 
-  <img src="Imagens Capas/ImagemFinal3.png" alt="Tela Final" class="bg-img finish-bg" />
+    <div class="container">
 
-  <img src="logo-ifg-vertical-inhumas-branco.png" id="logo-small" />
+        <!-- Contador e barra de progresso -->
+        <div class="question-counter hide">
+            Pergunta <span id="current-question">1</span> de <span id="total-questions"></span>
+        </div>
+        <div class="progress-container hide">
+            <div class="progress-bar"></div>
+        </div>
 
-  <div class="container">
-    <div class="question-counter hide">
-      Pergunta <span id="current-question">1</span> de <span id="total-questions"></span>
+        <!-- Perguntas -->
+        <div class="question-container hide">
+            <span class="question">Pergunta aq</span>
+
+            <!-- Imagem de feedback aparece aqui após responder -->
+            <div class="feedback-image hide"></div>
+
+            <div class="answers-container">
+                <!-- Botões de resposta serão criados dinamicamente pelo JS -->
+            </div>
+        </div>
+
+        <!-- Botões -->
+        <div class="controls-container">
+            <button class="start-quiz button">Começar Quiz!</button>
+            <button class="next-question button hide">Próxima Pergunta</button>
+        </div>
     </div>
-    <div class="progress-container hide">
-      <div class="progress-bar"></div>
-    </div>
-
-    <div class="question-container hide">
-      <span class="question">Pergunta aqui</span>
-
-      <div class="feedback-image hide"></div>
-
-      <div class="answers-container">
-      </div>
-    </div>
-
-    <div class="controls-container">
-      <button class="start-quiz button">Começar Quiz!</button>
-      <button class="next-question button hide">Próxima Pergunta</button>
-    </div>
-  </div>
-
 </body>
+
 </html>
