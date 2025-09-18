@@ -15,8 +15,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    position: relative;
+}
+
+/* Fundo padrão (desktop) */
+body.start {
+    background-image: url("Imagens Capas/ImagemInicial2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* cobre toda a tela */
+}
+
+body.finish {
+    background-image: url("Imagens Capas/ImagemFinal3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #logo-small {
@@ -44,7 +57,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 1; /* garante que container fique na frente da imagem */
 }
 
 .question-container {
@@ -156,6 +169,13 @@ body {
 
 /* ===================== RESPONSIVIDADE ===================== */
 @media (max-width: 768px) {
+    body.start,
+    body.finish {
+        background-size: contain; /* mostra toda a imagem sem cortar */
+        background-position: center top; /* ajusta para não cortar a parte superior */
+        background-repeat: no-repeat;
+    }
+    
     .question {
         font-size: 20px;
     }
@@ -265,39 +285,4 @@ body {
 
 @keyframes fadeIn {
     to { opacity: 1; }
-}
-
-/* ===================== FUNDO COM IMAGEM RESPONSIVA ===================== */
-.bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* desktop: cobre toda a área */
-    z-index: -1;
-    pointer-events: none;
-}
-
-.start-bg {
-    display: none;
-}
-
-.finish-bg {
-    display: none;
-}
-
-body.start .start-bg {
-    display: block;
-}
-
-body.finish .finish-bg {
-    display: block;
-}
-
-/* No mobile: ajustar para object-fit: contain, evitar cortar texto */
-@media (max-width: 768px) {
-    .bg-img {
-        object-fit: contain;
-    }
 }
