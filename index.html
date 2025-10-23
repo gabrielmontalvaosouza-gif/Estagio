@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Cerrado</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Interativo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <!-- Imagem inicial -->
+  <img id="imagem-inicial" src="teste2.png" alt="Imagem Inicial">
 
-<body class="start">
-    <img src="logo-ifg-vertical-inhumas-branco.png" id="logo-small">
+  <!-- Logo -->
+  <img src="logo-ifg-vertical-inhumas.png" id="logo-small" alt="Logo IFG">
 
-    <div class="container">
+  <!-- Botão iniciar -->
+  <div class="Controles">
+    <button class="Iniciar">Iniciar</button>
+  </div>
 
-        <!-- Contador e barra de progresso -->
-        <div class="question-counter hide">
-            Pergunta <span id="current-question">1</span> de <span id="total-questions"></span>
-        </div>
-        <div class="progress-container hide">
-            <div class="progress-bar"></div>
-        </div>
+  <!-- Container do mapa -->
+  <div id="map-container">
+    <img id="map-img" src="cerrado.png" alt="Mapa do Cerrado">
+  </div>
 
-        <!-- Perguntas -->
-        <div class="question-container hide">
-            <span class="question">Pergunta aq</span>
+  <!-- Popup de informação -->
+  <div id="info-popup" class="info-popup"></div>
+<div id="imagem-overlay"></div>
+<div id="imagem-wrapper">
+  <img id="imagem-inicial" src="teste2.png" alt="Imagem Inicial">
+</div>
 
-            <!-- Imagem de feedback aparece aqui após responder -->
-            <div class="feedback-image hide"></div>
-
-            <div class="answers-container">
-                <!-- Botões de resposta serão criados dinamicamente pelo JS -->
-            </div>
-        </div>
-
-        <!-- Botões -->
-        <div class="controls-container">
-            <button class="start-quiz button">Começar Quiz!</button>
-            <button class="next-question button hide">Próxima Pergunta</button>
-        </div>
-    </div>
+  <script src="style.js"></script>
 </body>
-
 </html>
